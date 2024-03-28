@@ -27,7 +27,7 @@ def findWeath():
         temp = math.ceil(url['main']['temp']-273)
         weath= url['weather'][0]['main']
         print(f"{weath} {temp}")
-        re=f"{weath} {temp} ' C"
+        re=f"{weath} {temp} degree C"
         res.delete(0,END)
         res.insert(0,re)
         ct.delete(0,END)
